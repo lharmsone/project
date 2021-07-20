@@ -14,10 +14,16 @@ function Header() {
                             <NavLink exact to="/" className="nav-link">Home</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/categories" className="nav-link">Categories</NavLink>
+                            <NavLink to="/articles" className="nav-link">Articles</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/cart" className="nav-link">Cart</NavLink>
+                            <NavLink to="/chat" className="nav-link">Chat</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/login" className="nav-link">Login</NavLink>
+                        </li>
+                        <li className="nav-item">
+                            <NavLink to="/aboutus" className="nav-link">About Us</NavLink>
                         </li>
                     </ul>
                 </div>

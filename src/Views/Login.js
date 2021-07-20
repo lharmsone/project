@@ -5,7 +5,7 @@ function Login() {
                 <div className="col-8 offset-2 text-center pt-3 pb-3">
                     <h1 className="display-4 fw-normal">Pricing</h1>
                     <p className="text-muted fs-5">
-                        Quickly build an effective pricing table for your potential customers with this Bootstrap example. It’s built with default Bootstrap components and utilities with little customization.
+                        Login
                     </p>
                 </div>
             </div>
