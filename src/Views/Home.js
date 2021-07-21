@@ -1,7 +1,7 @@
 import {NavLink} from 'react-router-dom';
-import cat1 from '../Assets/IMAGES/cor1.jpg';
-import cat2 from '../Assets/IMAGES/cor2.jpg';
-import cat3 from '../Assets/IMAGES/cor3.jpg';
+import cat1 from '../Assets/IMAGES/pic2.jpg';
+import cat2 from '../Assets/IMAGES/pic3.jpg';
+import cat3 from '../Assets/IMAGES/pic1r.jpg';
 import articles from '../DATA/Articles';
 
 
