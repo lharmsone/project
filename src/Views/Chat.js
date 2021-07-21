@@ -1,5 +1,7 @@
 import 'bootstrap/dist/css/bootstrap.css';
 import NewTaskFormPagaidu from '../Components/NewTaskFormPagaidu'
+import TasksList from '../Components/TasksList';
+import TasksListPagaidu from '../Components/TasksListPagaidu';
 
 function Chat() {
 
@@ -14,12 +16,7 @@ function Chat() {
             </div>
             <div classname="row">
                 <div classname="col">
-                    <ul classname="list group">
-                        <li class="list-group-item">
-                            <input class="form-check-input me-1" type="checkbox" />
-                            First checkbox
-                        </li>
-                    </ul>
+                    <TasksListPagaidu/>
                 </div>
 
             </div>

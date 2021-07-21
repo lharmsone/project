@@ -12,6 +12,10 @@ if (newTaskName == ''){
 }
 
 setSaving(true);
+setTimeout (()=>{
+    setSaving(false);
+    setNewTaskName('');
+},2000);
 
 }
 
