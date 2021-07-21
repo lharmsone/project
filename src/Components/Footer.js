@@ -1,7 +1,11 @@
+import picend from '../Assets/IMAGES/end.jpg';
 function Footer() {
     return (
         <div className="container">
             <footer className="pt-4 my-md-5 pt-md-5 border-top">
+                <div>
+                    <img src={picend} className="d-block w-100" alt="..." />
+                </div>
                 <div className="row">
                     <div className="col-12 col-md">
                         <small className="d-block mb-3 text-muted">© 2021</small></div>
@@ -73,6 +77,7 @@ function Footer() {
                         </ul>
                     </div>
                 </div>
+
             </footer>
         </div>
     )
