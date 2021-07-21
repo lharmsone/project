@@ -1,4 +1,5 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+//import Form from 'react-bootstrap/Form'
 import Page404 from './Views/Page404';
 import Header from './Components/Header';
 import Footer from './Components/Footer';
@@ -24,7 +25,7 @@ function App() {
           <Route exact path="/Articles">
             <Articles />
           </Route>
-          <Route path="/Articles/:ArticleId">
+          <Route path="/article/:articleId">
             <Article />
           </Route>
           <Route exact path="/Chat">

@@ -1,10 +1,12 @@
 import cat1 from '../Assets/IMAGES/cor1.jpg';
-import cat2 from '../Assets/IMAGES/cor1.jpg';
-import cat3 from '../Assets/IMAGES/cor1.jpg';
+import cat2 from '../Assets/IMAGES/cor2.jpg';
+import cat3 from '../Assets/IMAGES/cor3.jpg';
 import '../Assets/CSS/Article.css';
 import { useState } from 'react';
+import {useParams} from 'react-router-dom'
 
 function Article() {
+    const { articleID} = useParams();
     const [mainImage, setMainImage] = useState(cat1);
     const images = [cat1, cat2, cat3, cat1, cat2, cat3];
 
@@ -26,6 +28,7 @@ function Article() {
         <div className="container">
             <div className="row mt-5">
                 <div className="col">
+                    <div className="col">This is article {articleID} page</div>
                     <h1>Some super cool title</h1>
                 </div>
             </div>
