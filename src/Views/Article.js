@@ -2,6 +2,7 @@ import cat1 from '../Assets/IMAGES/cor1.jpg';
 import cat2 from '../Assets/IMAGES/cor2.jpg';
 import cat3 from '../Assets/IMAGES/cor3.jpg';
 import '../Assets/CSS/Article.css';
+import { SRLWrapper } from "simple-react-lightbox";
 
 
 import Breadcrumbs from '../Components/Breadcrumbs';
@@ -43,14 +44,25 @@ function Article() {
                 </div>
             </div>
             <div className="row mb-5 pb-3">
-                <div className="col-12 col-md-3">
-                    <NavLink to={'/articles/' + article.id}>
-                        <img className="img-fluid" src={article.image} />
-                    </NavLink>
+                <div className="col-12 col-md-4">
+                    <div className="row">
+                        <div className="col">
+                            <img src={mainImage} className="img-fluid" />
+                        </div>
+                    </div>
+
+                    <SRLWrapper>
+                        <div className="row">
+                            {imageThumbnails}
+                        </div>
+                    </SRLWrapper>
+
+
+
                 </div>
-                <div className="col-12 col-md-9">
+                <div className="col-12 col-md-8">
                     <p className="text-muted">
-                        {article.text}
+                        {article.textLong}
                     </p>
                 </div>
             </div>

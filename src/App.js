@@ -9,7 +9,7 @@ import Articles from './Views/Articles';
 import Chat from './Views/Chat';
 import Login from './Views/Login';
 import AboutUs from './Views/AboutUs';
-
+import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 

@@ -2,47 +2,28 @@ import {NavLink} from 'react-router-dom';
 import cat1 from '../Assets/IMAGES/cor1.jpg';
 import cat2 from '../Assets/IMAGES/cor2.jpg';
 import cat3 from '../Assets/IMAGES/cor3.jpg';
-
+import articles from '../DATA/Articles';
 
 
 function Home() {
-    const categories = [
-        {
-            title: 'Category 1',
-            image: cat1,
-            text: 'Some info about the category',
-            id: 'first-category',
-        },
-        {
-            title: 'Category 2',
-            image: cat2,
-            text: 'Some info about the category',
-            id: 'second-category',
-        },
-        {
-            title: 'Category 3',
-            image: cat3,
-            text: 'Some info about the category',
-            id: 'tird-category',
-        },
-    ];
-
-    const categoryElements = categories.map((category, index) => {
+        const articleElements = articles.map((article, index) => {
         return (
             <div className="col" key={index}>
                 <div className="card mb-3">
                     <div className="row g-0">
                         <div className="col-md-4">
-                            <img src={category.image} className="img-fluid rounded-start" alt="..." />
+                        <NavLink to={'/articles/' + article.id}>
+                            <img src={article.image} className="img-fluid rounded-start" alt="..." />
+                            </NavLink>
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
                                 <h5 className="card-title">
-                                    <NavLink to={'/categories/' + category.id}>
-                                        {category.title}
+                                    <NavLink to={'/articles/' + article.id}>
+                                        {article.title}
                                     </NavLink>
                                 </h5>
-                                <p className="card-text">{category.text}</p>
+                                <p className="card-text">{article.textIntro}</p>
                             </div>
                         </div>
                     </div>
@@ -80,11 +61,11 @@ function Home() {
             </div>
             <div className="row">
                 <div className="col mt-3">
-                    <h4>Categories</h4>
+                    <h4>The latest articles</h4>
                 </div>
             </div>
             <div className="row">
-                {categoryElements}
+                {articleElements}
             </div>
         </div>
     )
