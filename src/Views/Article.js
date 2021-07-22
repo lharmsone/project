@@ -1,18 +1,48 @@
-import cat1 from '../Assets/IMAGES/cor1.jpg';
-import cat2 from '../Assets/IMAGES/cor2.jpg';
-import cat3 from '../Assets/IMAGES/cor3.jpg';
-import '../Assets/CSS/Article.css';
+//import '../Assets/CSS/Article.css';
 import { SRLWrapper } from "simple-react-lightbox";
-
-
 import Breadcrumbs from '../Components/Breadcrumbs';
 import { NavLink, useParams } from 'react-router-dom';
-import articles from '../DATA/Articles';
-import { useState } from 'react';
+//import articles from '../DATA/Articles';
+import { useState, useEffect } from "react";
+import axios from "axios";
+
 
 function Article() {
     const { articleId } = useParams();
-    const filteredArticles = articles.filter((article) => { return articleId === article.id });
+    const [articles, setArticles] = useState({
+        loading: true,
+        items: [],
+    });
+
+    const loadArticles = async () => {
+        setArticles({
+            loading: true,
+            items: [],
+        });
+        try {
+            const url = 'http://localhost:8071/articles';
+            const response = await axios.get(url);
+            setArticles({
+                loading: false,
+                items: response.data,
+            });
+        } catch (e) {
+            alert('Whoops, something went wrong');
+            setArticles({
+                loading: false,
+                items: [],
+            });
+        }
+    }
+
+    useEffect(() => {
+        loadArticles();
+    }, [])
+
+
+
+
+    const filteredArticles = articles.filter((article) => { return articleId === article._id });
     const article = filteredArticles[0];
     const [mainImage, setMainImage] = useState(article.image);
 

@@ -5,10 +5,11 @@ import Header from './Components/Header';
 import Footer from './Components/Footer';
 import Home from './Views/Home';
 import Article from './Views/Article';
-import Articles from './Views/Articles';
+//import Articles from './Views/Articles';
 import Feedbacks from './Views/Feedbacks';
 import Login from './Views/Login';
 import AboutUs from './Views/AboutUs';
+import Articles from './Views/Articles';
 //import SimpleReactLightbox from 'simple-react-lightbox'
 
 

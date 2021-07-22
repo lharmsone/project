@@ -13,7 +13,7 @@ function NewFeedbackForm({reloadFeedbacksList}) {
         setNewFeedbackUser(event.target.value);
     }
     const createNewFeedback = async () => {
-        if (newFeedbackName == '') {
+        if (newFeedbackName === '') {
             alert('Please provide the feedback!');
             return;
         }
@@ -32,7 +32,7 @@ function NewFeedbackForm({reloadFeedbacksList}) {
             setSaving(false);
             setNewFeedbackName('');
             setNewFeedbackUser('');
-           // reloadFeedbacksList();
+           //reloadFeedbacksList();
         } catch (e) {
             alert('Something went wrong when talking to the server');
             setSaving(false);

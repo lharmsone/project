@@ -1,14 +1,51 @@
 import Breadcrumbs from '../Components/Breadcrumbs';
 import { NavLink } from 'react-router-dom';
-import articles from '../DATA/Articles';
-
+import axios from "axios";
+import { useState, useEffect } from "react";
+//import articles from '../DATA/Articles';
+//import ArticlesList from '../Components/ArticlesList';
+//import articles from '../Components/ArticlesList';
 function Articles() {
     const bredcrumbPaths = [
         { link: '/', title: 'Home' },
         { title: 'Articles' },
+        { link: '/article/', title: 'Test article' },
     ]
 
-    const articleElements = articles.map((article, index) => {
+    const [articles, setArticles] = useState({
+        loading: true,
+        items: [],
+    });
+
+    const loadArticles = async () => {
+        setArticles({
+            loading: true,
+            items: [],
+        });
+        try {
+            const url = 'http://localhost:8071/articles';
+            const response = await axios.get(url);
+            setArticles({
+                loading: false,
+                items: response.data,
+            });
+        } catch (e) {
+            alert('Whoops, something went wrong');
+            setArticles({
+                loading: false,
+                items: [],
+            });
+        }
+    }
+
+    useEffect(() => {
+        loadArticles();
+    }, [])
+
+
+
+
+    const articleElements = articles.items.map((article, index) => {
         return (
             <div className="row mb-5 pb-3 border-bottom" key={index}>
                 <div className="col-12 col-md-3">

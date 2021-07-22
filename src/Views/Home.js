@@ -2,11 +2,40 @@ import {NavLink} from 'react-router-dom';
 import cat1 from '../Assets/IMAGES/pic2.jpg';
 import cat2 from '../Assets/IMAGES/pic3.jpg';
 import cat3 from '../Assets/IMAGES/pic1r.jpg';
-import articles from '../DATA/Articles';
-
+//import articles from '../DATA/Articles';
+import axios from "axios";
+import { useState, useEffect } from "react";
 
 function Home() {
-        const articleElements = articles.map((article, index) => {
+    
+        const [articles, setArticles] = useState({
+            loading: true,
+            items: [],
+        });
+        const loadArticles = async () => {
+            setArticles({
+                loading: true,
+                items: [],
+            });
+            try {
+                const url = 'http://localhost:8071/articles';
+                const response = await axios.get(url);
+                setArticles({
+                    loading: false,
+                    items: response.data,
+                });
+            } catch (e) {
+                alert('Whoops, something went wrong');
+                setArticles({
+                    loading: false,
+                    items: [],
+                });
+            }
+        }
+        useEffect(() => {
+            loadArticles();
+        }, [])
+        const articleElements = articles.items.map((article, index) => {
         return (
             <div className="col" key={index}>
                 <div className="card mb-3">

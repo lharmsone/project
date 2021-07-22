@@ -1,5 +1,5 @@
 import Breadcrumbs from '../Components/Breadcrumbs';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
 import piccat from '../Assets/IMAGES/cat.png';
 import picus from '../Assets/IMAGES/aboutUs.jpg';
 function AboutUs() {

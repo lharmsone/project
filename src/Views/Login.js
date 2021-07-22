@@ -1,6 +1,7 @@
 import Breadcrumbs from '../Components/Breadcrumbs';
-import { NavLink } from 'react-router-dom';
+//import { NavLink } from 'react-router-dom';
 import picwelcome from '../Assets/IMAGES/welcome.jpg';
+
 //import Form from 'react-bootstrap/Form'
 function Login() {
   const bredcrumbPaths = [
@@ -37,8 +38,7 @@ function Login() {
                   type="password"
                   id="input-password"
                   class="form-control"
-                  minlength="8"
-                  class="form-control"
+                  //minlength="8"
                   placeholder="Password"
                   required
                 />
@@ -48,8 +48,7 @@ function Login() {
                   type="password"
                   id="input-repeat-password"
                   class="form-control"
-                  minlength="8"
-                  class="form-control"
+                  //minlength="8"
                   placeholder="Repeat password"
                   required
                 />
@@ -89,7 +88,7 @@ function Login() {
                 <div class="form-check">
                   <input class="form-check-input" type="checkbox" value="" id="agreecheck" />
                   <label class="form-check-label" for="agreecheck">
-                  Agree with therms and conditions
+                    Agree with therms and conditions
                   </label>
                 </div>
               </div>
