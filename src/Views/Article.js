@@ -1,4 +1,3 @@
-//import '../Assets/CSS/Article.css';
 import { SRLWrapper } from "simple-react-lightbox";
 import Breadcrumbs from '../Components/Breadcrumbs';
 import { NavLink, useParams } from 'react-router-dom';
@@ -42,7 +41,7 @@ function Article() {
 
 
 
-    const filteredArticles = articles.filter((article) => { return articleId === article._id });
+    const filteredArticles = articles.items.filter((article) => { return articleId === article.id });
     const article = filteredArticles[0];
     const [mainImage, setMainImage] = useState(article.image);
 

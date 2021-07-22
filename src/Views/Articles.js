@@ -3,13 +3,11 @@ import { NavLink } from 'react-router-dom';
 import axios from "axios";
 import { useState, useEffect } from "react";
 //import articles from '../DATA/Articles';
-//import ArticlesList from '../Components/ArticlesList';
-//import articles from '../Components/ArticlesList';
+
 function Articles() {
     const bredcrumbPaths = [
         { link: '/', title: 'Home' },
         { title: 'Articles' },
-        { link: '/article/', title: 'Test article' },
     ]
 
     const [articles, setArticles] = useState({

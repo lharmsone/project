@@ -1,7 +1,3 @@
-import cat1 from '../Assets/IMAGES/cor1.jpg';
-import cat2 from '../Assets/IMAGES/cor2.jpg';
-import cat3 from '../Assets/IMAGES/cor3.jpg';
-import '../Assets/CSS/Article.css';
 import { SRLWrapper } from "simple-react-lightbox";
 
 
