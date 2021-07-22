@@ -17,10 +17,10 @@ function Header() {
                             <NavLink to="/articles" className="nav-link">Articles</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/chat" className="nav-link">Chat</NavLink>
+                            <NavLink to="/feedbacks" className="nav-link">Feedback</NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink to="/login" className="nav-link">Login</NavLink>
+                            <NavLink to="/login" className="nav-link">Sign up</NavLink>
                         </li>
                         <li className="nav-item">
                             <NavLink to="/aboutus" className="nav-link">About Us</NavLink>

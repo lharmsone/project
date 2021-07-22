@@ -6,10 +6,10 @@ import Footer from './Components/Footer';
 import Home from './Views/Home';
 import Article from './Views/Article';
 import Articles from './Views/Articles';
-import Chat from './Views/Chat';
+import Feedbacks from './Views/Feedbacks';
 import Login from './Views/Login';
 import AboutUs from './Views/AboutUs';
-import SimpleReactLightbox from 'simple-react-lightbox'
+//import SimpleReactLightbox from 'simple-react-lightbox'
 
 
 
@@ -28,8 +28,8 @@ function App() {
           <Route path="/articles/:articleId">
             <Article />
           </Route>
-          <Route exact path="/Chat">
-            <Chat />
+          <Route exact path="/Feedbacks">
+            <Feedbacks />
           </Route>
           <Route exact path="/Login">
             <Login />

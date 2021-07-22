@@ -3,16 +3,15 @@ import { NavLink } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.css';
 import NewFeedbackForm from '../Components/NewFeedbackForm';
 import FeedbacksList from '../Components/FeedbacksList';
+import picty from '../Assets/IMAGES/thankyou.jpg';
 
-
-function Chat() {
+function Feedbacks() {
     const bredcrumbPaths = [
         { link: '/', title: 'Home' },
         { title: 'Feedback' },
     ]
     return (
-
-        <div classname="container">
+        <div className="container">
             <div className="row">
                 <div className="col">
                     <Breadcrumbs paths={bredcrumbPaths} />
@@ -25,28 +24,19 @@ function Chat() {
             </div>
             <div classname="row">
                 <div classname="col">
-                    <FeedbacksList/>
+                    <FeedbacksList />
                 </div>
 
             </div>
             <NewFeedbackForm />
-
-
-
-
+            <div className="row pt-3"></div>
+            <div>
+                <img src={picty} className="d-block w-100" alt="..." />
+            </div>
         </div>
 
 
     )
-
-
-
-
-
-
-
-
-
-
 }
-export default Chat;
+
+export default Feedbacks;
