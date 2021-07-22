@@ -11,7 +11,6 @@ function Chat() {
         { title: 'Feedback' },
     ]
     return (
-
         <div classname="container">
             <div className="row">
                 <div className="col">

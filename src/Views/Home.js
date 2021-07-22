@@ -18,7 +18,7 @@ function Home() {
                         </div>
                         <div className="col-md-8">
                             <div className="card-body">
-                                <h5 className="card-title">
+                                <h5 className="card-title ">
                                     <NavLink to={'/articles/' + article.id}>
                                         {article.title}
                                     </NavLink>

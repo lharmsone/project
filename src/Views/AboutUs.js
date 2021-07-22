@@ -1,5 +1,7 @@
 import Breadcrumbs from '../Components/Breadcrumbs';
 import { NavLink } from 'react-router-dom';
+import piccat from '../Assets/IMAGES/cat.png';
+import picus from '../Assets/IMAGES/aboutUs.jpg';
 function AboutUs() {
     const bredcrumbPaths = [
         { link: '/', title: 'Home' },
@@ -15,7 +17,7 @@ function AboutUs() {
             <div className="row">
                 <div className="col-8 offset-2 text-center pt-3 pb-3">
                     <div class="row">
-                        <h2>About us</h2>
+                    <h1 className="display-4 fw-normal">About Us</h1>
                         <ul class="nav nav-tabs" id="myTab" role="tablist">
                             <li class="nav-item" role="presentation">
                                 <button class="nav-link active" id="history-tab" data-bs-toggle="tab" data-bs-target="#home" type="button" role="tab" aria-controls="home" aria-selected="true">History</button>
@@ -31,13 +33,13 @@ function AboutUs() {
                             </li>
                         </ul>
 
-<div></div>
+                        <div></div>
                         <div class="tab-content">
                             <div></div>
                             <div class="tab-pane active container  card" id="home" role="tabpanel" aria-labelledby="history-tab">
                                 <div class="row">
                                     <div class="col-4">
-                                        <img class="img-fluid rounded-start" src="https://picsum.photos/500/500" alt="picart1"  />
+                                        <img class="img-fluid rounded-start" src={picus} alt="picart1" />
                                     </div>
                                     <div class="col-8 card-body">
                                         <p>Gorgoroth ever adventures forgotten steps answering. Ignoring rare chap relations Samwise Gamgee vile breeze move caves. Fenmarch scratch mood watches gibbet meal pupil pickle fire. Rabble-rousers set waybread attention presses unfriendly lifetime forgiven agents swift law? Professes Treebeard borne trail from plates directly tale. Do not take me for some conjurer of cheap tricks. Intend victorious blankets 17 bows Wargs saying! Pearl crawling rather tree Mearas for celebrate appearance birthday?.</p>
@@ -62,8 +64,33 @@ function AboutUs() {
                     </div>
                 </div>
             </div>
+            <div className="card mb-3 col-8 offset-2 text-center pt-3 pb-3">
+                <div className="row g-0">
+                    <div className="col-md-4">
+                        <img src={piccat} className="img-fluid rounded-start" alt="..." />
+
+                    </div>
+                    <div className="col-md-8">
+                        <div className="card-body">
+                            <h5 className="card-title"> Contacts
+                            </h5>
+                            <div className="card-text">
+                                <h6>Address</h6>
+                                <p>Somewhere, Earth</p>
+                                <h6>Email</h6>
+                                <a href="mailto:info@zenchill.com"><p>info@zenchill.com</p></a>
+                                <h6>Phone</h6>
+                                <a href="tel:+37100000000"><p>+371 00000000</p></a>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
         </div >
+
     )
 }
-
 export default AboutUs;

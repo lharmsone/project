@@ -54,6 +54,45 @@ function Login() {
                   required
                 />
               </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  id="firstname-input"
+                  class="form-control"
+                  placeholder="Enter your First name"
+                  aria-label="name"
+                  minlength="2"
+                  aria-describedby="firstname-addon"
+                  required
+                />
+              </div>
+              <div class="input-group mb-3">
+                <input
+                  type="text"
+                  id="lastname-input"
+                  class="form-control"
+                  placeholder="Enter your Last name"
+                  aria-label="Lastname"
+                  minlength="1"
+                  aria-describedby="lastname-addon"
+                />
+              </div>
+              <div class="input-group mb-3">
+                <select class="form-select country-pic" aria-label="country select">
+                  <option selected>Country</option>
+                  <option value="LV">Latvia</option>
+                  <option value="LT">Lithuania</option>
+                  <option value="EE">Estonia</option>
+                </select>
+              </div>
+              <div class="input-group mb-3">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="agreecheck" />
+                  <label class="form-check-label" for="agreecheck">
+                  Agree with therms and conditions
+                  </label>
+                </div>
+              </div>
               <div class="d-grid gap-2">
                 <button type="submit" class="btn Login_btn">
                   Log in

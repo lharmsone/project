@@ -10,71 +10,39 @@ function Footer() {
                     <div className="col-12 col-md">
                         <small className="d-block mb-3 text-muted">© 2021</small></div>
                     <div className="col-6 col-md">
-                        <h5>Features</h5>
+                        <h5>About</h5>
                         <ul className="list-unstyled text-small">
                             <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">Cool stuff</a></li><li className="mb-1"><a className="link-secondary text-decoration-none" href="https://latvija.lv">Random feature</a>
+                                <a className="link-secondary text-decoration-none" href="">Abyssinian Cat</a></li><li className="mb-1"><a className="link-secondary text-decoration-none" href="https://latvija.lv">Random feature</a>
                             </li>
                             <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">Team feature</a>
+                                <a className="link-secondary text-decoration-none" href="">Bengal Cat</a>
                             </li>
                             <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Stuff for developers</a>
+                                <a className="link-secondary text-decoration-none" href="">
+                                Chartreux Cat Breed</a>
                             </li>
-                            <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Another one</a>
-                            </li>
-                            <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Last time</a>
-                            </li>
-                        </ul>
-                    </div>
+                            </ul>
                     <div className="col-6 col-md">
                         <h5>
-                            Resources</h5>
+                            Useful Info</h5>
                         <ul className="list-unstyled text-small">
                             <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Resource</a>
+                                <a className="link-secondary text-decoration-none" href="">
+                                Exotic Shorthair Cat Breed</a>
                             </li>
                             <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Resource name</a>
+                                <a className="link-secondary text-decoration-none" href="">
+                                Egyptian Mau Cat</a>
                             </li>
                             <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Another resource</a>
+                                <a className="link-secondary text-decoration-none" href="">
+                                Korat Cat Breed</a>
                             </li>
-                            <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Final resource</a>
-                            </li>
+                            
                         </ul>
                     </div>
-                    <div className="col-6 col-md">
-                        <h5>
-                            About</h5>
-                        <ul className="list-unstyled text-small">
-                            <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Team</a>
-                            </li>
-                            <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Locations</a>
-                            </li>
-                            <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Privacy</a>
-                            </li>
-                            <li className="mb-1">
-                                <a className="link-secondary text-decoration-none" href="https://latvija.lv">
-                                    Terms</a>
-                            </li>
-                        </ul>
+                   
                     </div>
                 </div>
 
